@@ -12,19 +12,18 @@ body
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* .App
+
+.App
 {
-  background-color: silver;
-  height: 100vh;
-  width: 100%;
+  background: rgb(169, 169, 169);
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 /* APP */
 #header
 {
-  background-color: silver;
+  background: silver;
   
   width: 100%;
   display: flex;
@@ -90,9 +89,9 @@ ul
 {
   width: 80%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  gap: 1.5em;
+  gap: 2em;
 }
 
 li
@@ -137,6 +136,11 @@ nav ul li a:hover
 {
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.humbrger-menu
+{
+  display: none;
 }
 
 /* ENDS */
@@ -318,20 +322,25 @@ button
 
 @media only screen and (max-width: 740px)
 {
+
   .wrapper
   {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
   }
 
-  nav
+  .nav-menu,
+  .social-icons
   {
     display: none;
   }
+
   #about
   {
     height: 60%;
     width: 100%;
+    box-sizing: border-box;
   }
   
   .container
@@ -376,7 +385,8 @@ button
 
   button
   {
-    padding: .5em .7em;
+    padding: 1em;
+    box-shadow: 0 0 10px;
   }
 
   .scroll
@@ -385,49 +395,134 @@ button
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5em;
+    padding: 2em .5em;
+    padding-bottom: .5em;
+  }
+
+  .scroll p
+  {
+    font-size: 1em;
+    font-weight: 600;
   }
 
   #boxes {
     display: flex;
-    flex-wrap: wrap; /* Enables wrapping of the boxes */
-    justify-content: center; /* Centers the wrapped boxes */
-    align-items: center; /* Centers the boxes vertically */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    /* flex-direction: column; */
     width: 100%;
-    height: auto; /* Use 'auto' height to prevent overflow issues */
-    padding: 1em; /* Add some padding around the gallery */
-    overflow-y: auto; /* Scroll only when necessary */
+    height: auto; 
+    padding: 1em; 
+    gap: .7em;
+    padding-top: 4em;
+    flex-wrap: wrap;
     position: relative;
   }
 
-  .overall-box {
+  .overall-box 
+  {
     display: flex;
-    flex-direction: column; /* Adjusts layout for smaller screens */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    width: 45%; /* Reduces width to allow for two items per row */
-    height: auto; /* Use 'auto' height for flexibility */
-    margin: 0.5em; /* Adds spacing between boxes */
-    flex-shrink: 0; /* Prevents boxes from shrinking */
+    width: 46%; 
+    flex-shrink: 0; 
     position: unset;
     border: 1px solid black;
-    background-color: white; /* Adds contrast */
+    background-color: white; 
   }
 
 
   .overall-box h5 {
     top: 0;
-    left: 1em;
+    left: 2em;
   }
 
   .overall-box button {
-    top: 0;
-    right: 0;
+    top: 4%;
+    right: 2em;
+    padding: .8em 1em;
   }
 
   .overall-box img {
-    max-width: 80%; 
+    max-width: 100%; 
     height: auto;
     margin-bottom: 1em;
+  }
+
+  .overall-box p
+  {
+    position: unset;
+    transform: translateX(unset);
+    bottom: unset;
+    left: unset;
+    color: black;
+    margin-left: 4em;
+  }
+
+  .humbrger-menu
+  {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .humburger-navigation
+  {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 40%;
+    height: auto;
+    background: white;
+    padding: 1em .5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    z-index: 20000;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px;
+  }
+
+  .nav-menu-humburger
+  {
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    box-sizing: border-box;
+  }
+
+  .nav-menu-humburger li
+  {
+    width: 100%;
+    background: silver;
+    padding: .5em;
+    box-sizing: border-box;
+    font-weight: 600;
+  }
+
+  .social-icons-humburger
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .7em;
+    width: 100%;
+    background: silver;
+    padding: .5em 0;
+    box-sizing: border-box;
+  }
+
+  .social-icons-humburger .icon
+  {
+    font-size: 1.4em;
+  }
+
+  .arrow
+  {
+    color: white;
+    font-size: 2em;
   }
 }

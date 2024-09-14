@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import { FaPinterestP } from "react-icons/fa";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaTwitter } from "react-icons/fa";
@@ -6,8 +8,18 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 function Background()
 {
 
+    const [toggle, setToggle] = useState(false);
+
     const handleClick =()=>{
         alert("Clicked")
+    }
+
+    const handlOpenMenu = ()=>{
+        setToggle(true);
+    }
+
+    const handlCloseMenu = ()=>{
+        setToggle(false);
     }
 
     return(
@@ -34,10 +46,38 @@ function Background()
                         <li onClick={handleClick}><TiSocialFacebook className="icon"/></li>
                         <li onClick={handleClick}><FaPinterestP className="icon"/></li>
                         <li onClick={handleClick}><FaTwitter className="icon"/></li>
-                        {/* <li></li> */}
                     </div>
                     {/* ENDS */}
+
+                    {/* POPUP MENU */}
+                    <div className="humbrger-menu">
+                
+                    {toggle ? <button onClick={handlCloseMenu}>Close</button> : <button onClick={handlOpenMenu}>Menu</button>}
+                        {toggle && (
+                            <div className="humburger-navigation">
+                                {/* NAV MENU */}
+                                <div className="nav-menu-humburger">
+                                    <li><a href="www.google.com" onClick={handleClick}>Furniture</a></li>
+                                    <li><a href="www.google.com" onClick={handleClick}>Showroom</a></li>
+                                    <li><a href="www.google.com" onClick={handleClick}>About Us</a></li>
+                                    <li><a href="www.google.com" onClick={handleClick}>Trade</a></li>
+                                    <li><a href="www.google.com" onClick={handleClick}>Clearence</a></li>
+                                </div>
+                                {/* ENDS */}
+
+                                {/* SOCIAL ICONS */}
+                                <div className="social-icons-humburger">
+                                    <li onClick={handleClick}><TiSocialFacebook className="icon"/></li>
+                                    <li onClick={handleClick}><FaPinterestP className="icon"/></li>
+                                    <li onClick={handleClick}><FaTwitter className="icon"/></li>
+                                </div>
+                                {/* ENDS */}
+                            </div>
+                        )}
+                    </div>
                 </ul>
+
+
             </nav>
             {/* NAV ENDS */}
 
@@ -68,8 +108,8 @@ function Background()
 
                             <div className="scroll">
                                 <p>01 / 04</p>
-                                <div style={{display: 'flex', justifyContent: 'center',gap: '1em'}}>
-                                    <input type="radio" onClick={handleClick}></input>
+                                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',gap: '1em'}}>
+                                    <input type="radio" defaultChecked onClick={handleClick}></input>
                                     <input type="radio" onClick={handleClick}></input>
                                     <input type="radio" onClick={handleClick}></input>
                                     <input type="radio" onClick={handleClick}></input>

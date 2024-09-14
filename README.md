@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Overview
+This application is a mimic of a certain application design , there's no functionality on it besides clicking on a button and it return an alert stating that you clicked a button.
+
+### Technologies used
+* React
+* CSS
+* HTML
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
