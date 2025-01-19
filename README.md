@@ -1,79 +1,172 @@
-https://ecommerce-furniture-two.vercel.app
-# Overview
-This application is a mimic of a certain application design , there's no functionality on it besides clicking on a button and it return an alert stating that you clicked a button.
+# 🛋️ Furniture E-commerce Demo
 
-### Technologies used
-* React
-* CSS
-* HTML
 
-## Getting Started with Create React App
+A demonstration e-commerce website for furniture.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://ecommerce-furniture-two.vercel.app)
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
 
-### `npm start`
+## 🛠️ Technical Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Core Technologies
+- **React** - UI framework
+- **CSS** - Custom styling
+- **HTML** - Structure
+- **Vercel** - Deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Git
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/oscarpoco/furniture-ecommerce.git
+   cd furniture-ecommerce
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start Development Server**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+4. **Access Website**
+   - Local: [http://localhost:3000](http://localhost:3000)
+   - Production: [https://ecommerce-furniture-two.vercel.app](https://ecommerce-furniture-two.vercel.app)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📜 Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Start development server
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Run tests
+npm test
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Build for production
+npm run build
 
-## Learn More
+# Eject from Create React App
+npm run eject   # ⚠️ One-way operation
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 💅 Design Implementation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Colors
+```css
+:root {
+  --primary: #2C3E50;
+  --secondary: #E74C3C;
+  --text: #34495E;
+  --background: #ECF0F1;
+  --accent: #F1C40F;
+}
+```
 
-### Code Splitting
+### Typography
+- Primary Font: [Font Name]
+- Secondary Font: [Font Name]
+- Body Copy: 16px
+- Heading Scale: 1.25
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎯 Future Enhancements
 
-### Analyzing the Bundle Size
+1. **Functionality**
+   - Product filtering
+   - Shopping cart
+   - User authentication
+   - Payment integration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Features**
+   - Product search
+   - Wishlist
+   - User reviews
+   - Related products
 
-### Making a Progressive Web App
+3. **Technical**
+   - State management
+   - API integration
+   - Performance optimization
+   - Unit testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🚀 Deployment
 
-### Advanced Configuration
+Currently deployed on Vercel:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Build Project**
+   ```bash
+   npm run build
+   ```
 
-### Deployment
+2. **Deploy**
+   ```bash
+   # Using Vercel CLI
+   vercel
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 💻 Development
 
-### `npm run build` fails to minify
+### Code Style
+- ESLint configuration
+- Prettier formatting
+- Component structure
+- CSS methodology
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Best Practices
+- Semantic HTML
+- Accessibility
+- Performance
+- SEO optimization
+
+## 🧪 Testing
+
+```bash
+# Run test suite
+npm test
+
+# Coverage report
+npm test -- --coverage
+```
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## 🤝 Contributing
+
+1. Fork repository
+2. Create feature branch
+3. Commit changes
+4. Push to branch
+5. Open Pull Request
+
+## 📞 Contact
+
+- **Website**: https://oscarkylepoco.vercel.app
+- **Email**: oscarkylepoco@gmail.com
+
+## 🙏 Acknowledgments
+
+- Design inspiration sources
+- React community
+- Open source contributors
+- Vercel for hosting
+
+---
+Made with ❤️ by oscarpoco
